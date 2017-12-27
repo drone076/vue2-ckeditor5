@@ -1,5 +1,5 @@
 # vue2-ckeditor5
-Integrate Ckeditor 5 into VUE 2 component
+Integrate Ckeditor 5 into VUE 2 component, two way binding
 
 ```javascript
 yarn add @ckeditor/ckeditor5-build-classic
