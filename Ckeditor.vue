@@ -30,9 +30,7 @@ export default {
       })
       .then(editor => {
         this.instance = editor
-        editor.document.on('changesDone', (evt, data) => {
-          this.updateValue(editor.getData())
-        })
+        editor.model.document.on(change, () => { this.updateValue(editor.getData()) })
       })
       .catch(error => {
         console.error(error)
